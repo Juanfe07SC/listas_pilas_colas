@@ -10,8 +10,12 @@ lista.shift();
 //imprimir la lista
 console.log(lista);
 
-
 let nombres = ["Juan", "Gaby", "Carlos", "Vivi"];
 for (let i = 0; i < nombres.length; i++){
     console.log (nombres[i]);
 }
+
+
+let productos =["Tomate", "Arroz", "Sal"];
+nuevoProducto = input ("Agregue su producto: ")
+productos.append(nuevoProducto)
