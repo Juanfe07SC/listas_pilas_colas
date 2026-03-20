@@ -1,21 +1,27 @@
-let lista = [1, 2, 3, 4, 5];
-//agregar elemento al final de la lista
-lista.push(6);
-//agregar elemento al principio de la lista
-lista.unshift(0);
-//eliminar ultimo elemnento de lista
-lista.pop();
-//eliminar primer elemento de lista
-lista.shift();
-//imprimir la lista
-console.log(lista);
+// Crear la lista con productos iniciales
+let productos = ["Tomate", "Arroz", "Sal"];
 
-let nombres = ["Juan", "Gaby", "Carlos", "Vivi"];
-for (let i = 0; i < nombres.length; i++){
-    console.log (nombres[i]);
+// Función para agregar un nuevo producto
+function agregarProducto(producto) {
+    productos.push(producto);
+    console.log(Producto "${producto}" agregado.);
 }
 
+// Función para mostrar todos los productos
+function mostrarProductos() {
+    console.log("Lista de productos:");
+    productos.forEach((producto, index) => {
+        console.log(${index + 1}. ${producto});
+    });
+}
 
-let productos =["Tomate", "Arroz", "Sal"];
-nuevoProducto = input ("Agregue su producto: ")
-productos.append(nuevoProducto)
+// Función para eliminar un producto específico
+function eliminarProducto(producto) {
+    let indice = productos.indexOf(producto);
+    if (indice !== -1) {
+        productos.splice(indice, 1);
+        console.log(Producto "${producto}" eliminado.);
+    } else {
+        console.log(El producto "${producto}" no está en la lista.);
+    }
+}
